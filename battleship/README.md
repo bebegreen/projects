@@ -5,7 +5,7 @@ My take on the classic board game, just choose a player, and start playing, with
 
 
 
-<img src='./AwesomeScreenshot-2017-08-19T11-55-13-563Z.gif'>
+<img src='https://drive.google.com/open?id=0B_rjys9mYXzDcTdUMEZNTlIzYXc'>
 
 ### Features 
 
