@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script> var catID = '##catID##'; </script> 
+    <title>prods-page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/shopping-cart.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<body onload='onload()'>
+
+    <header>
+        <div class="content">
+            <h1><a href='/'>SteffiLove.com</a></h1>
+            <div>
+                currency
+                <select  class="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="ILS">ILS</option>
+                    
+            </select>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="myShop"></div>
+    <div id="myCart">
+        <div id="paypalBtn">
+
+        </div>
+    </div>
+
+
+
+    <!-- 
+    <script src="products.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/shopping-cart.js"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="js/paypal.js">
+
+    </script>
+
+</body>
+
+</html>

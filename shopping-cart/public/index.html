@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>ctgrs-page</title>
+    <link href="css/shopping-cart.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body id="index" onload="onload()">
+    <header>
+        <div class="content">
+            <h1><a href='/'>SteffiLove.com</a></h1>
+            <div>
+                currency
+                <select class="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="ILS">ILS</option>
+                    
+            </select>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <div id="myShop">
+        <div id='jumbo'>
+            <nav>
+                <!-- <ul>
+            <li></li>
+        </ul> -->
+            </nav>
+            <!-- <label for="searchBox"></label><input placeholder="Search" type="text" name="" id='searchBox' value=""> -->
+        </div>
+    </div>
+    <div id="myCart">
+        <div id="paypalBtn">
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="js/paypal.js"></script>
+    <script src="js/shopping-cart.js"></script>
+</body>
+
+</html>
