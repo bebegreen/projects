@@ -5,7 +5,7 @@ My take on the classic board game, just choose a player, and start playing, with
 
 
 <!--![](https://github.com/bebegreen/battleship/AwesomeScreenshot-2017-08-19T11-55-13-563Z-iloveimg-compressed (1).gif)-->
-<img src='https://github.com/bebegreen/battleship/AwesomeScreenshot-2017-08-19T11-55-13-563Z-iloveimg-compressed (1).gif'>
+<img src='./readmeGif.gif'>
 
 ### Features 
 
