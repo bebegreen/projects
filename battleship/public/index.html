@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Battle-ship</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Battle-ship</h1>
+    <div id='game'>
+        <canvas id="canvas" width="1000" height="500"></canvas>
+
+
+        <div id='users-list'>
+
+            <div id='users'>
+                <h2>Online Players: </h2>
+                <select id='select' multiple>
+            
+                </select> <br>
+                <button id="choose">Play!</button>
+
+            </div>
+            <form id='chatBox'>
+                chat<br>
+                <ul id='messages'>
+
+                </ul>
+
+                <input type="text" id='chat' autocomplete="off">
+                <button id='sendChat'>send</button>
+            </form>
+
+            <div id="login">
+                <h2>enter a nick name</h2>
+                username <input id='nickname' type="name">
+                <button id='send'> login</button>
+            </div>
+            <div id='game-over'>
+                <button type="">new game</button>
+            </div>
+            <button id='backToLobby'>Back to lobby</button>
+        </div>
+    </div>
+    <div id="alerts">
+        <h2 id='alert'></h2>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascripts/dom.js"></script>
+    <script src='javascripts/client.js'></script>
+    <script src="javascripts/board.js"></script>
+    <script src="javascripts/main.js"></script>
+
+
+</body>
+
+</html>
