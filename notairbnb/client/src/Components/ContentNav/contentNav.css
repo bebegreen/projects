@@ -1,0 +1,27 @@
+
+.content-nav { 
+    /*position: sticky; */
+    top: 0; 
+    background: white; 
+}
+.content-nav a { 
+    color: #008489;
+    margin-right: 10px ; 
+    font-weight: 500;  
+}
+.ul{ 
+    font-size: 14px; 
+    display: flex; 
+    padding-left: 1px; 
+    list-style: none; 
+    align-items: center; 
+    margin: 0; 
+    padding: 20px 0; 
+    border-bottom: 1px solid lightgray; 
+    letter-spacing: 0.7px;
+}
+.fa{ 
+    font-size: 3px; 
+    vertical-align: middle; 
+    margin-right: 10px ; 
+}

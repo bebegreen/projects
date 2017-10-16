@@ -1,0 +1,47 @@
+.input { 
+    padding: 1em ; 
+    margin-bottom: 5px;
+    border-radius: 4px; 
+    border: 1px solid gray; 
+}
+
+.form  { 
+    display:flex; 
+    flex-direction: column; 
+}
+
+.signup { 
+    margin: 2em auto; 
+    width: 35%; 
+    padding: 2em ; 
+    border: 1px solid lightgray;
+    box-shadow: 0 0 6px -2px grey;
+}
+
+.title { 
+    text-align: center; 
+}
+
+.button { 
+    width: 100%; 
+
+}
+
+.button { 
+    width: 100%; 
+    border: none; 
+    border-radius: 4px;
+    background: #ff5a5f; 
+    padding: 1em;  
+    color: white; 
+    /* transition: 0.5s all;  */
+}
+.button:hover { 
+    cursor: pointer;
+    background: #ff7e82; 
+}
+.checkbox { 
+    font-size: 13px; 
+    display: flex; 
+    margin: 1em; 
+}

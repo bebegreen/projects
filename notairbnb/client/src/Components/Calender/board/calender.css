@@ -1,0 +1,53 @@
+.startDate{ 
+    color: #484848
+    
+}
+.endDate { 
+    color: #484848
+}
+.calender { 
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr); 
+    user-select: none; 
+    font-size: 11px; 
+    grid-gap: 1px; 
+}
+.navigate:hover { 
+    cursor: pointer; 
+}
+.current { 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    /* width: 50%;  */
+    /* margin: 1em auto;  */
+}
+.container { 
+    display: flex; 
+    align-items: center; 
+}
+.inputs{ 
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    margin-top: 14px; 
+    
+}
+.inputs input{ 
+    font-size:15px;
+    width: 85%; 
+    margin:0 auto;
+    padding: 1em; 
+    border: 1px solid lightgray;
+}
+.inputs input:first-child { 
+    border-bottom: none; 
+}
+.board { 
+    width: 70%; 
+}
+.message { 
+    background: #f2dede;
+    padding: 1em; 
+    color: #a94442; 
+}

@@ -1,0 +1,45 @@
+header { 
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #DBDBDB; 
+    display: flex; 
+    align-items: center; 
+    height: 64px; 
+    justify-content: space-between;
+}
+
+.header-left{ 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    width: 50%; 
+}
+
+.logo { 
+    height: 100%; 
+    border-right: 1px solid #DBDBDB; 
+    padding: 14px 24px;
+    width: 91px; 
+    /*animation: App-logo-spin 5s linear infinite; */
+}
+
+@keyframes App-logo-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+.input { 
+    height: 100%; 
+    border: none; 
+    background: white; 
+    color: #484848; 
+    width: 100%; 
+}
+
+.input:focus{ 
+    border: none; 
+    outline: none; 
+}
+
+.fa-search{ 
+    padding: 0 14px; 
+}
+

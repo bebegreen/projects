@@ -1,0 +1,32 @@
+.content-container { 
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 0 28px;  
+    position: relative; 
+    /* display: flex;  */
+    /* justify-content: space-between;  */
+}
+
+@media (max-width: 660px){ 
+    .content-container { 
+        width: 100%; 
+    }
+}
+
+
+.content { 
+    width: 58.3%; 
+}
+
+@media (max-width: 1240px){ 
+    .content-container{ 
+        flex-direction: column; 
+    }
+    .content{ 
+        width: 100%; 
+    }
+}
+footer{ 
+    height: 200px; 
+}
+

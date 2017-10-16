@@ -1,0 +1,133 @@
+.booking-form-container {
+    width: 376px;
+    position: absolute;
+    top: -50px;
+    right: 28px;
+
+    /* position: sticky; 
+    top: 0;  */
+}
+
+@media (max-width: 1240px){ 
+    .booking-form-container { 
+        width: 100%; 
+        position: relative; 
+        top: 0; 
+        right: 0; 
+    }
+}
+
+.price-container span:first-child {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.price-container span:nth-child(2) {
+    padding-top: 4px;
+    margin-left: 6px;
+    /*font-weight: bold;*/
+}
+
+.price-container {
+    color: white;
+    height: 50px;
+    width: 100%;
+    background: rgba(60,63,64,0.9);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.booking-dates {
+    display: flex;
+}
+
+.booking-form-container form {
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
+    /* top: 50px; */
+    border: 1px solid lightgray;
+    border-top: none;
+    display: flex;
+    padding: 1em;
+    flex-direction: column; 
+}
+.booking-form-container form button { 
+    width: 100%; 
+    border: none; 
+    border-radius: 4px;
+    background: #ff5a5f; 
+    padding: 1em;  
+    color: white; 
+    /* transition: 0.5s all;  */
+}
+.booking-form-container form button:hover { 
+    cursor: pointer;
+    background: #ff7e82; 
+}
+.booking-form-container form button h3{ 
+    margin: 0; 
+}    
+.booking-dates label {
+    width: 50%;
+    line-height: 10px;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+}
+.booking-dates label>div>div{ 
+    width: 100%; 
+}
+/*.booking-dates label>div>div>div{ 
+    width: 100%; 
+}*/
+
+
+.booking-dates label:first-child input {
+    border-right: none;
+}
+
+.booking-dates input {
+    padding: 1em;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+.booking-form-guests {
+    margin-top: 10px;  
+    line-height: 10px;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+}
+.booking-form-guests select { 
+    width: 100%; 
+    padding: 1em; 
+    background: white; 
+    border: 1px solid lightgray;
+
+}
+.booking-form-guests select:hover{ 
+    cursor: pointer;
+}
+.price-totals-table-right { 
+    text-align: right; 
+}
+.price-totals table{ 
+
+    margin-top: 1em; 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+.price-totals-total { 
+    font-weight: bold; 
+}
+.price-totals td { 
+    padding: 1em 0; 
+}
+.price-totals .item-row {
+    border-bottom: 1px solid lightgray;     
+}
+
+.react-datepicker-wrapper,.react-datepicker__input-container { 
+    width: 100%; 
+}

@@ -1,0 +1,25 @@
+.top-navbar{ 
+    font-weight: bold; 
+}
+
+.ul { 
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+}
+.ul li {
+    padding: 0 17px; 
+    letter-spacing: 1px; 
+    font-size: 13px; 
+    font-weight: 500; 
+}
+.ul li:hover{ 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+@media (max-width: 720px) { 
+    .top-navbar{ 
+        display: none; 
+    }
+}

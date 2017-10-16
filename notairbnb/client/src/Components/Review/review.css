@@ -1,0 +1,32 @@
+.review { 
+    display: flex; 
+    flex-direction: column; 
+    padding: 1em 0; 
+    width: 100%; 
+    border-bottom: 1px solid lightgray; 
+
+    
+}
+.review h1 { 
+    margin: 0; 
+}
+.review-head { 
+    display: flex; 
+    justify-content: space-between; 
+}
+.user-detail { 
+    display: flex;
+    align-items: center;  
+
+}
+
+.user-detail img { 
+    border-radius: 50%; 
+    width: 65px; 
+    height: 65px; 
+    
+}
+.user-detail h2 { 
+    margin: 0 5px;  
+    
+}

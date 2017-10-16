@@ -1,0 +1,25 @@
+.day{ 
+    /* border: 1px solid lightgray;  */
+    box-shadow: 0 0 0 1px lightgray; 
+    text-align: center; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.day:hover { 
+    background: lightblue; 
+    cursor: pointer;
+}
+.pastDay { 
+    composes: day; 
+    color: lightgray; 
+}
+.picked { 
+    composes: day; 
+    background: lightgreen; 
+}
+.booked { 
+    composes: day;
+    background: rgba(0,0,0,0.3);  
+}

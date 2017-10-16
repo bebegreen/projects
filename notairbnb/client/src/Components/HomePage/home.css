@@ -1,0 +1,11 @@
+.content{ 
+    width: 95%; 
+    margin:  20px auto;
+    padding: 1em;  
+
+}
+.filters { 
+    background: white; 
+    position: sticky; 
+    top: 0;
+}
