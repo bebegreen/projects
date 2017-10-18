@@ -1,0 +1,32 @@
+<div id='screen-right'>
+    <div id='mapTop'>
+        <h1>jobs around you</h1>
+        <div>
+            <div>
+                <p>
+                    radius:(0-100)km
+                </p>
+                <input type="range" value="100" ng-model='radius' step="10" list="km">
+
+
+                <datalist id="km">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                    <option>60</option>
+                    <option>70</option>
+                    <option>80</option>
+                    <option>90</option>
+                    <option>100</option>
+                </datalist>
+            </div>
+        </div>
+    </div>
+    <div id='map-wrapper'>
+        <div id='map'>
+
+        </div>
+    </div>
+</div>

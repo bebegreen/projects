@@ -1,0 +1,35 @@
+<!-- <hr> -->
+<!-- <input type="radio"> -->
+
+<div id='job-detail' ng-click="$ctrl.showDescription()">
+
+  <div>
+
+    <h3> {{ $ctrl.job.title }}</h3>
+    <p>
+      {{ $ctrl.job.company + ' - ' }}
+      <span>{{ $ctrl.job.address.city }}</span>
+    </p>
+    <p>
+      {{ $ctrl.job.distance }} <span ng-show="$ctrl.car"> - by car </span>
+    </p>
+  </div>
+  <div style='width:153px'>
+    <div ng-if='$ctrl.saveBtn'>
+
+      <img id='unsaved' ng-if='!$ctrl.saved' ng-click='$ctrl.save()' src="https://image.flaticon.com/icons/png/128/126/126471.png"
+        width="20" height="20">
+      <img id='saved' ng-if='$ctrl.saved' ng-click='$ctrl.save()' src="https://image.flaticon.com/icons/png/128/69/69904.png" width='20'
+        height="20">
+    </div>
+    <p> {{ $ctrl.date }} </p>
+    <b class='applyMsg' ng-show="$ctrl.appliedMsg">You applied to this job!</b>
+
+    <!-- <div class='skill' ng-repeat="skill in $ctrl.job.skills"> {{ skill }}</div> -->
+
+    <!-- <button ng-click="$ctrl.showDescription()" ng-show='$ctrl.descriptionBtn()'> See Description </button> -->
+    <button id='seeApplicants' ng-click="$ctrl.showApplicants()" ng-show='$ctrl.applicantsBtn'> See Applicants </button>
+    <div id='applyBtn' ng-click="$ctrl.apply(); $event.stopPropagation();" ng-show='$ctrl.applyBtn'></div>
+  </div>
+</div>
+<hr style="margin: 0">

@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box; 
+}
+nav {
+    --navbar-color: #00b7ff; 
+    color: white; 
+    background: var(--navbar-color); 
+    
+}
+
+#profile-pic {
+    padding: 10px;  
+    width: 54px; 
+    height: 54px; 
+}
+
+#nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between; 
+    height: 50px;
+    align-items: center; 
+    padding: 0 5px; 
+    position: relative; 
+    z-index: 20; 
+}
+
+/* nav h1 { 
+    margin-left: 67px; 
+} */
+nav h1:hover {
+    cursor: pointer;
+}
+nav button { 
+    width: 133px;
+    font-size: 15px;  
+    height:40px; 
+    background: transparent; 
+
+    border: 1px solid transparent;
+    border-bottom: 3px solid transparent; 
+    /* border-radius: 5px;  */
+    color: white; 
+}
+
+
+
+#navbar { 
+    position: relative; 
+    right: -216px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+@media screen and (max-width: 1300px) {
+    #navbar { 
+        right: -99px; 
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #navbar { 
+        right:0px; 
+    }
+}
+
+nav>div>div>div{
+    margin: 0 30px;  
+    padding: 12px 0; 
+    transition: all 0.5s; 
+    border-top: 3px solid transparent; 
+    border-bottom: 3px solid transparent; 
+    
+}
+nav>div>div>div:hover{ 
+    
+    cursor: pointer;
+    /* background: white;  */
+    /* color: #00B7FF;  */
+    border-bottom: 3px solid white; 
+}
+section { 
+    /* bottom: 52px;  */
+    transition: all 0.3s; 
+    visibility: hidden; 
+    position: absolute;
+    top: -50px; 
+    right: 0;  
+    opacity: 0; 
+    box-shadow: 0 0 10px black;
+    z-index: 1; 
+
+}
+
+
+nav img:hover + section, section:hover { 
+    visibility: visible; 
+    opacity: 1; 
+    z-index: 0; 
+    /* display: block;  */
+    background: #78D1F4; 
+    transform: translateY(102px); 
+}
+nav img:hover{ 
+    cursor: pointer;
+}
+section:hover{
+    visibility: visible; 
+    
+}
+section div{ 
+    padding: 20px; 
+    text-align: center; 
+    transition: all 0.2s; 
+    border-bottom: 1px solid transparent;
+}
+section div:hover{ 
+    background: rgba(0,0,0,0.1); 
+    cursor: pointer;
+}
+

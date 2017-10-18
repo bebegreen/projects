@@ -1,0 +1,21 @@
+<h1 id='h1'>new job alert: </h1>
+
+
+{{#each jobsArr}}
+    <div id='job-detail'>
+
+      <div>
+
+        <h3> {{ this.title }}</h3>
+        <p>
+          {{ this.company }} - 
+          <span>{{ this.location }}</span>
+        </p>
+      </div>
+      <div>
+        <p> {{ this.date }} </p>
+
+        <div id='applyBtn'></div>
+      </div>
+    </div>
+{{/each}}

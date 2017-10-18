@@ -1,0 +1,52 @@
+<!-- <div id='regForm' ng-show='$root.regForm'> -->
+<div id='regForm' class='fade rotate'>
+    <div id='regInputs'>
+        <h1 ng-if='!$root.username'>Sign up</h1>
+        <h2 ng-if='!$root.username'> get personalized offers!</h2>
+
+
+
+        <!-- <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div> -->
+
+        <form action="" onsubmit="preventDefault()">
+            <div id='regFirst' ng-show='$ctrl.regFirst'>
+                <input required type="text" ng-model='user.username' placeholder="username">
+                <input required type="password" ng-model='user.password' placeholder="password"><br>
+                <input required id='email' type="email" ng-model='user.email' placeholder="Email"><br>
+                <input required type="text" ng-model='user.fname' placeholder="First name">
+                <input required type="text" ng-model='user.lname' placeholder="Last name"><br>
+                <input type="button" value='next' ng-click='$ctrl.next()'>
+
+            </div>
+            <div id='regSecond' ng-show='$ctrl.regSecond'>
+                <div id=regSecContainer>
+                    <div>
+                        <input id='user-address' required type="text" ng-model='user.city' placeholder="City"><br>
+                        <multiple-autocomplete id='multiple-skills' placeholder='skills' api-url="/api/jobs/skillsNames" ng-model="user.skills" suggestions-arr="">
+                        </multiple-autocomplete>
+                        <!--<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>-->
+                    </div>
+                    <!--<input id='skills' required type="text" ng-model='user.skills' placeholder="Skills (e.g. react, javascript, nodejs)"><br>-->
+                    <textarea required type='text' ng-model='user.cv' placeholder="About yourself"></textarea><br>
+                </div>
+                <input ng-if='!$root.username' ng-click=$ctrl.register(user) value="Sign up!">
+                <input ng-if='$root.username' type='button' value="Update">
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<!-- username: 'steff',
+password: '4321',
+skills: ['es6', 'backbone', 'nodejs', 'php'],
+email: 'steff@gmail.com',
+location: 'jerusalem',
+firstname: 'seffi',
+lastname: 'vanbo',
+public_description: 'really nice',
+private_data -->

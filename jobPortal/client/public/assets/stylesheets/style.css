@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    /* background: #eaeaea none;  */
+    color: #404040;
+    background: url('../../assets/images/rhondak-native-florida-folk-artist-83553.jpg') no-repeat center top fixed;
+    background-size: cover;
+}
+
+button {
+    outline: none;
+}
+
+input[type='button']:focus {
+    outline: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* #applicants-wrapper { 
+  background: #fff; 
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+} */
+
+#main-view-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background: #fff;  */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 1px;
+}
+
+
+
+#main-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+
+/* #right-col{ } */

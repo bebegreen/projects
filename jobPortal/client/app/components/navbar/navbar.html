@@ -1,0 +1,29 @@
+<nav>
+
+    <div id='nav-container'>
+
+        <!-- <h1><a ng-href="#!main"> Developers Jobs Portal</a></h1> -->
+
+        <h1 ng-click='$ctrl.main()'> careersJS </h1>
+
+        <!--<a ng-show='$ctrl.loginBtn' href="#!login">click here to login and apply to jobs</a>-->
+        <div id='navbar' ng-show='$ctrl.navbar'>
+            <div ng-click=$ctrl.latestJobs()> Latest jobs </div>
+            <div ng-click=$ctrl.agent()> Agent </div>
+
+
+            <div ng-click=$ctrl.appliedJobs()> Jobs I Applied To </div>
+            <div ng-click=$ctrl.offerJob()> Offer a job </div>
+            <div ng-click=$ctrl.applicants()> Jobs I Offered </div>
+
+            <img id='profile-pic' src="http://i0.wp.com/cvisioncentral.com/wp-content/themes/buddyboss/_inc/images/avatar-member.jpg"
+                alt="">
+            <section>
+                <div ng-click=$ctrl.profile()> Edit Profile</div>
+                <div ng-click=$ctrl.logout()> Log Out</div>
+            </section>
+
+        </div>
+        <login-form></login-form>
+    </div>
+</nav>

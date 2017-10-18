@@ -1,0 +1,31 @@
+* { 
+    box-sizing: border-box; 
+}
+
+/* #jobs-list {
+    width: 43%;
+    height: 80vh; 
+    overflow-y: scroll; 
+    display: inline-block;  */
+    /*background: yellowgreen;  */
+/* } */
+
+#applicants-list { 
+    /* display: inline-block;  */
+    /* position: relative;  */
+    /* left: 50%;  */
+    /* width: 55%;  */
+    overflow-y: scroll; 
+    height: 75vh; 
+    padding: 20px;
+    background: rgba(250, 250, 250, 0.7) 
+}
+/* #applicants-wrapper { 
+    display: flex; 
+} */
+
+
+
+
+
+

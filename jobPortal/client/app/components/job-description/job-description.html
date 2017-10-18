@@ -1,0 +1,9 @@
+<div id='job-description'>
+    <h2> {{ $ctrl.job.company }} </h2>
+
+    <div class='skill' ng-repeat="skill in $ctrl.job.skills"> {{ skill }}</div>
+    <button ng-click="$ctrl.apply()" ng-show='$ctrl.applyBtn()'> Apply!</button>
+    <b class='applyMsg' ng-show="$ctrl.appliedMsg">You applied to this job!</b>
+
+    <p> {{ $ctrl.job.description }}</p>
+</div>

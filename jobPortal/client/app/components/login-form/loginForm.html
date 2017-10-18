@@ -1,0 +1,8 @@
+<form id='login-form' ng-hide='$ctrl.hide'>
+        username <input type="text" ng-model='username'> password <input type="text" ng-model='password'>
+        <button type='submit' ng-click='$ctrl.login(username, password)'> Log in</button>
+        <a href='' ng-click='$ctrl.showRegForm()'> Sign up</a>
+
+        <h2 ng-show="$ctrl.failedMsg">wrong password or username</h2>
+
+</form>

@@ -1,0 +1,6 @@
+#offer-a-job-container{ 
+    width: 100%; 
+    height: calc(100vh); 
+    background:rgba(0, 0, 0, 0.5);
+}
+

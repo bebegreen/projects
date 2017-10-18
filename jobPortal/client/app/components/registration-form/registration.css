@@ -1,0 +1,97 @@
+#regForm { 
+    /* background: url('../../assets/images/rhondak-native-florida-folk-artist-83553.jpg'); 
+    background-size: cover;  */
+    height: 78vh; 
+    padding: 20px; 
+    color:#404040;
+    animation: fadein 1s;
+}
+/* #regInputs{ 
+text-align: center; 
+
+} */
+#regForm h1 { 
+    margin: 0; 
+}
+#email { 
+    width: 41.9% !important; 
+}
+#regForm input{ 
+    
+    border: 1px solid #bdc7d8;
+    border-radius: 5px; 
+    width: 20%;  
+    font-size: 18px; 
+    padding: 8px 10px; 
+    margin: 0 10px 10px 0;
+    transition: all 0.5s;  
+}
+#regForm textarea { 
+    padding: 8px 10px; 
+    font-size: 18px; 
+    resize: none;   
+    width: 307px; 
+    height: 200px ;  
+}
+
+#regForm input:focus{ 
+    background: rgba(250, 250,250, 0.8); 
+}
+#regForm input[value='Sign up!']{ 
+    text-align: center; 
+    color: white; 
+    background: #00b7ff; 
+    margin-top: 10px; 
+    border: 1px solid transparent;
+}
+
+.form-item-container::before {
+    content: 'skills: ' 
+}  
+
+#regForm .form-item-container { 
+    height: 75%; 
+    width: 307px !important; 
+}
+
+
+#regForm input[value='Sign up!']:hover { 
+    background: #1BE91B; 
+    cursor: pointer;
+    color: white; 
+    border: 1px solid transparent; 
+}
+#regForm input[value='next']{ 
+    background: #00b7ff; 
+    border: 1px solid transparent;
+    color: white; 
+    margin-top: 10px; 
+    transition: all 0.5s; 
+}
+#regForm input[value='next']:hover{
+    background: #1BE91B; 
+    cursor: pointer; 
+} 
+
+
+#skills, #user-address { 
+    width: 307px !important; 
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+multiple-autocomplete{ 
+    width: 200px; 
+}
+
+#regSecContainer { 
+    display: flex; 
+}
+#reg-form .js-example-basic-multiple{ 
+    width: 20%; 
+}
+#reg-form li { 
+    margin: 10px !important;  
+}

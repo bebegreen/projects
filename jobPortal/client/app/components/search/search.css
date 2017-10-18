@@ -1,0 +1,58 @@
+
+#search { 
+    margin: 20px 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#search input { 
+    padding: 0 0 0 20px; 
+    border-radius: 4px; 
+    width: 400px; 
+    margin-right:20px; 
+    height: 48px;
+    border: 1px solid gray;
+}
+/* #search input:focus{ 
+    background: #BFE2BF; 
+} */
+
+#search input:nth-child(2) {
+    padding-left: 40px; 
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE3IDE3IiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHBhdGggaWQ9ImEiIGQ9Ik03LjUgMTVhNy41IDcuNSAwIDEgMCAwLTE1IDcuNSA3LjUgMCAwIDAgMCAxNXoiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48cGF0aCBzdHJva2U9IiMwMEFBNDEiIHN0cm9rZS13aWR0aD0iNCIgZD0iTTcuNSAxNWE3LjUgNy41IDAgMSAwIDAtMTUgNy41IDcuNSAwIDAgMCAwIDE1eiIgbWFzaz0idXJsKCNiKSIvPjxwYXRoIHN0cm9rZT0iIzAwQUE0MSIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTIuNSAxMi41TDE3IDE3Ii8+PC9nPjwvc3ZnPg==') no-repeat 12px center #fff; 
+}
+#search input:nth-child(3) {
+    padding-left: 50px; 
+    background: url('https://find.wendys.com/images/common/icons/location.png') no-repeat 12px center #fff; 
+    background-size: 25px 25px; 
+}
+
+#search button { 
+    height: 48px; 
+    width: 100px; 
+    border-radius: 4px; 
+    border: 1px solid transparent;  
+    background: #35e14f; 
+    color: white; 
+    transition: all 0.5s;   
+    /*background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE3IDE3IiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHBhdGggaWQ9ImEiIGQ9Ik03LjUgMTVhNy41IDcuNSAwIDEgMCAwLTE1IDcuNSA3LjUgMCAwIDAgMCAxNXoiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48cGF0aCBzdHJva2U9IiMwMEFBNDEiIHN0cm9rZS13aWR0aD0iNCIgZD0iTTcuNSAxNWE3LjUgNy41IDAgMSAwIDAtMTUgNy41IDcuNSAwIDAgMCAwIDE1eiIgbWFzaz0idXJsKCNiKSIvPjxwYXRoIHN0cm9rZT0iIzAwQUE0MSIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTIuNSAxMi41TDE3IDE3Ii8+PC9nPjwvc3ZnPg==') no-repeat 12px center #fff; */
+}
+
+#search button:hover { 
+    background: #0CAA41; 
+    cursor: pointer; 
+    border: 1px solid transparent;
+    
+}
+#mapBtn { 
+    background: url('https://png.icons8.com/google-maps/color/1600'); 
+    background-size: cover; 
+    width: 60px; 
+    height: 60px ;
+    margin: 10px;  
+}
+
+#mapBtn:hover {
+    cursor: pointer;
+}

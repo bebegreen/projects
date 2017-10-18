@@ -1,0 +1,97 @@
+#profile-container {
+    width: 100%;
+    height: auto;
+    background: #eaeaea;
+    width: 1024px;
+    margin: 0 auto;
+    /* display: grid;  */
+    padding: 20px;
+    animation: fadein 0.5s;
+}
+
+header {
+    display: flex;
+    padding: 0 20px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    background: #02b3e4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+
+header div:hover {
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: #148bb1;
+}
+
+#personal-info {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between
+}
+
+#personal-info img {
+    width: 240px;
+    height: 240px;
+}
+
+#cv {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cv li {
+    margin: 10px;
+}
+
+#cv .form-item-container {
+    width: 152%;
+}
+
+#cv textarea {
+    padding: 8px 10px;
+    font-size: 18px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    width: 100%;
+    margin-left: 126px;
+    height: 300px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#saved-msg {
+    display: flex;
+    background: rgba( 190, 50, 250, 0.5);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 50px;
+    left: calc(50% - 100px);
+    animation: fadein 0.5s;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}

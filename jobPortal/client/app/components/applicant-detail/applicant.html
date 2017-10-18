@@ -1,0 +1,23 @@
+<div>
+    <b>
+        {{ $ctrl.applicant.firstname + " " + $ctrl.applicant.lastname }}
+    </b>
+    <p>
+        <ul>
+            <li ng-repeat='skill in $ctrl.applicant.skills'> {{skill }}</li>
+
+        </ul>
+    </p>
+    <p>
+        {{ $ctrl.applicant.public_description }}
+    </p>
+    <p>
+        {{ $ctrl.applicant.private_data }}
+    </p>
+    <p>
+        {{ $ctrl.applicant.email }}
+    </p>
+    <!-- <div> $ctrl.applicant</div> -->
+</div>
+<hr>
+

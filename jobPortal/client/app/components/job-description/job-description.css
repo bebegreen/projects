@@ -1,0 +1,6 @@
+#job-description{  
+    padding: 20px; 
+    /* border: 1px solid gray; */
+    background: rgba(250, 250, 250, 0.7); 
+    animation: fadein 1s; 
+}

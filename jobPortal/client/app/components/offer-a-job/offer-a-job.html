@@ -1,0 +1,71 @@
+<div id='offerJob'>
+    <h1 ng-show='!$ctrl.posted'>
+        Enter your job details
+    </h1>
+    <form id='offerJobForm' action="">
+            <div class="offer-job-column">
+                <p>1.</p>
+
+                <input type="text" placeholder="Company Name" ng-model="$ctrl.job.company"> <br>
+                <input type="text" placeholder="Job Title" ng-model="$ctrl.job.title"><br>
+                <!-- <input type="text" placeholder="Location"><br> -->
+                <input id='address' type="text" ng-model="$ctrl.location" ng-model="$ctrl.job.address" placeholder="Location">
+            </div>
+
+            <div class="offer-job-column">
+                <p>2.</p>
+
+                <!-- <input type="text" placeholder="Skills"><br> -->
+                <multiple-autocomplete id='multiple-skills' placeholder='Required Skills' api-url="/api/jobs/skillsNames" ng-model="$ctrl.job.skills"
+                    suggestions-arr="">
+                </multiple-autocomplete>
+            </div>
+            <div class="offer-job-column">
+                <p>3.</p>
+
+
+                <textarea ng-model="$ctrl.job.description" placeholder="Job Description" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            
+    </form>
+    <div id='post' ng-click="$ctrl.post() " ng-show="!$ctrl.posted">Post</div>
+
+    <div id='post-success' ng-show='$ctrl.posted'>
+
+        <h1>Thankyou!</h1>
+        <h2> the job will be posted shortly.</h2>
+    </div>
+</div>
+<!-- 
+timestamp: new Date(),
+title: 'Senior javascript developer',
+// skills: ['react', 'es6'],
+skills: [15, 16, 17, 18],
+location: 'New York',
+company: 'hp',
+date: Date(),
+// geometry: {
+// type: 'point',
+coordinates: [34.771447, 32.062757]
+// }
+,
+// address: 'tel aviv',
+address: {
+  city: 'Tel Aviv-Yafo, Israel',
+  street: 'Rothschild 22',
+
+},
+
+geometry: {
+  type: 'Point',
+  coordinates: [35.014801, 31.905541]
+},
+
+description: `Where does it come from?
+  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`,
+publisher: 'steff',
+// applicants: ['steff']
+}, -->

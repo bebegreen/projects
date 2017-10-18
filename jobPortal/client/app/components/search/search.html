@@ -1,0 +1,16 @@
+<div id='search'>
+    <div id='mapBtn' ng-click='$ctrl.mapView()' ng-show='$ctrl.showMap'></div>
+    
+    <input type="text" list='skills' ng-change='$ctrl.getOptions()' ng-model="$ctrl.keyword" placeholder="Job Title, Skill, or Company">
+    <input id='address' type="text" ng-model="$ctrl.location" placeholder="Location">
+    <button ng-click="$ctrl.search()">Search</button>
+</div>
+
+<!-- <form action="/action_page.php" method="get"> -->
+    <!-- <input list="browsers" name="browser"> -->
+    <datalist id="skills">
+      <!-- <option value="Internet Explorer"> -->
+        <option ng-repeat="skill in $ctrl.skills" value='{{skill}}'></option>
+    </datalist>
+    <!-- <input type="submit"> -->
+  <!-- </form> -->

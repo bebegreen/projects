@@ -1,0 +1,74 @@
+#offerJob {
+    background: white;
+    margin: 0 auto;
+    width: 85%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    box-shadow: 0 0 10px;
+    animation: fadein 0.5s; 
+}
+
+#offerJob input{ 
+    width:100%; 
+    height: 58px; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+    border-radius: 5px; 
+    border: 1px solid gray; 
+}
+.offer-job-column { 
+    width: 30%; 
+}
+
+#offerJobForm { 
+    display: flex; 
+    justify-content: space-around; 
+    width:100%; 
+}
+
+#multiple-skills{ 
+    /* margin-right: 20px;  */
+}
+
+#offerJobForm textarea .form-item-container{ 
+    width: 100% !important; 
+}
+
+.form-item-container {
+    /* height: 101%; */
+    height: 50%; 
+    border-radius: 10px;
+    border:1px solid gray;
+}
+
+#post{ 
+    border-radius: 10px;
+    width: 200px; 
+    background: #bbbbbb; 
+    padding: 20px; 
+    margin: 30px auto; 
+    text-align: center; 
+    transition: all 0.5s; 
+    box-shadow: 0 0 10px;
+    
+}
+
+#post:hover { 
+    cursor: pointer;
+    box-shadow: none; 
+    background: #848282; 
+    
+}
+
+#post-success { 
+    width: 50%; 
+    border-radius: 10px; 
+    background: white; 
+    margin: 0 auto; 
+    
+}
+#offerJobForm textarea{ 
+    width: 100%; 
+}

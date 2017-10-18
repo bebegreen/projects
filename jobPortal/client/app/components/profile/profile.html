@@ -1,0 +1,37 @@
+<!-- <profile></profile> -->
+<div ng-show='$ctrl.saved' id='saved-msg'> Profile Saved </div>
+<div id='profile-container'>
+    <!-- <registration-form></registration-form> -->
+    <header>
+        <h1> {{ $ctrl.user.firstname + ' ' + $ctrl.user.lastname}} </h1>
+        <div ng-click='$ctrl.save(user)'>Save</div>
+        
+    </header>
+    <div id='personal-info'>
+        <img id='profile-pic' src="http://i0.wp.com/cvisioncentral.com/wp-content/themes/buddyboss/_inc/images/avatar-member.jpg"
+            alt="">
+        <div id='contact-info'>
+            <p>Location: </p>
+            <input id='user-address' required type="text" ng-model='user.city' placeholder="{{$ctrl.user.address.city}}"><br>
+            <p> Email: </p>
+            <input type="text" placeholder="{{$ctrl.user.email}}"><br>
+            <p>
+                Public Description
+            </p>
+            <input type="text" placeholder="{{$ctrl.user.public_description}}"><br>
+
+        </div>
+    </div>
+
+    <div id='cv'>
+
+        <multiple-autocomplete id='multiple-skills' placeholder='skills' api-url="/api/jobs/skillsNames" ng-model="$ctrl.user.skills" suggestions-arr="">
+        </multiple-autocomplete>
+        
+        <textarea> {{$ctrl.user.private_data}}</textarea><br>
+    </div>
+
+
+
+
+</div>
